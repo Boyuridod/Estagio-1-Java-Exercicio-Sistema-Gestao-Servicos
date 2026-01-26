@@ -35,13 +35,13 @@ public abstract class Service implements Serializable {
 		
 	}
 
-	public Service(String description, ServiceType type, String beginDate,
-			String endDate, ServiceStatus status,
+	public Service(String description, ServiceType type, LocalDateTime beginDate,
+			LocalDateTime endDate, ServiceStatus status,
 			ServicePriority priority) {
 		this.description = description;
 		this.type = type;
-		this.beginDate = LocalDateTime.parse(beginDate, DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
-		this.endDate = LocalDateTime.parse(endDate, DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
+		this.beginDate = beginDate;
+		this.endDate = endDate;
 		this.status = status;
 		this.priority = priority;
 	}
