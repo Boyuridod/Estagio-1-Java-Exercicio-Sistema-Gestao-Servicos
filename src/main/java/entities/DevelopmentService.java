@@ -1,0 +1,50 @@
+package entities;
+
+import java.time.LocalDateTime;
+
+import enums.ServicePriority;
+import enums.ServiceStatus;
+import enums.ServiceType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "services")
+public class DevelopmentService extends Service{
+	
+	private String language;
+	
+	public DevelopmentService() {
+		super();
+	}
+	
+	public DevelopmentService(Integer id, String description, LocalDateTime beginDate,
+			LocalDateTime endDate, ServiceStatus status, ServicePriority priority, String language) {
+		super(id, description, ServiceType.DEVELOPMENT, beginDate, endDate, status, priority);
+		this.language = language;
+	}
+
+	@Column(name="lang")
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+	@Override
+	public String toString() {
+		return "DevelopmentService [getId()=" + getId() + ", getDescription()=" + getDescription() + ", getType()="
+				+ getType() + ", getBeginDate()=" + getBeginDate() + ", getEndDate()=" + getEndDate() + ", getStatus()="
+				+ getStatus() + ", getPriority()=" + getPriority() + ", language=" + language + "]";
+	}
+
+	@Override
+	public double calculatePrice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
