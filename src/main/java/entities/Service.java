@@ -16,10 +16,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "services")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "services")
+@DiscriminatorColumn(name = "service_type")
 public abstract class Service implements Serializable {
 	private Integer id;
 	private String description;
@@ -47,8 +49,12 @@ public abstract class Service implements Serializable {
 	@Id
     @GeneratedValue
     @Column(name="id")
-	public int getId() {
+	public Integer getId() {
 		return id;
+	}
+	
+	public void setId(Integer id) {
+	    this.id = id;
 	}
 
 	@Column(name="descrip")
@@ -61,7 +67,7 @@ public abstract class Service implements Serializable {
 	}
 
 	@Enumerated(EnumType.STRING)
-    @Column(name="tipo")
+    @Column(name="type")
 	public ServiceType getType() {
 		return type;
 	}
