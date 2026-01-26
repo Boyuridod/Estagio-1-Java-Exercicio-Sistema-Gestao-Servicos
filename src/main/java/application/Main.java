@@ -10,7 +10,7 @@ import persistence.JPAUtil;
 public class Main {
 	public static void main(String[] args) {
 		
-		Service service1 = new DevelopmentService(null, "Desenvolver este aplicativo",
+		Service service1 = new DevelopmentService("Desenvolver este aplicativo",
 				"20/01/2026 10:00:00", "22/01/2026 18:00:00",
 				ServiceStatus.FINISHED, ServicePriority.VERY_HIGH, "Java");
 		

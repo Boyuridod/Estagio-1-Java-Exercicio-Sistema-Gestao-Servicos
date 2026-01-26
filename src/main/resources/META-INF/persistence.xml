@@ -8,9 +8,9 @@
         <properties>
             <!-- Banco -->
             <property name="jakarta.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost:3306/bancoSer i"/>
+                      value="jdbc:mysql://localhost:3306/service_management?useSSL=false&amp;serverTimezone=UTC"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
-            <property name="jakarta.persistence.jdbc.password" value="senha"/>
+            <property name="jakarta.persistence.jdbc.password" value="123456789"/>
             <property name="jakarta.persistence.jdbc.driver"
                       value="com.mysql.cj.jdbc.Driver"/>
 

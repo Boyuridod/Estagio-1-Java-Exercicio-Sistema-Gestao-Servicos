@@ -1,7 +1,5 @@
 package entities;
 
-import java.time.LocalDateTime;
-
 import enums.ServicePriority;
 import enums.ServiceStatus;
 import enums.ServiceType;
@@ -20,9 +18,9 @@ public class MaintenanceService extends Service {
 		super();
 	}
 
-	public MaintenanceService(Integer id, String description, LocalDateTime beginDate, LocalDateTime endDate,
+	public MaintenanceService(String description, String beginDate, String endDate,
 			ServiceStatus status, ServicePriority priority, String where, String whatHappened) {
-		super(id, description, ServiceType.MAINTENANCE, beginDate, endDate, status, priority);
+		super(description, ServiceType.MAINTENANCE, beginDate, endDate, status, priority);
 		this.where = where;
 		this.whatHappened = whatHappened;
 	}

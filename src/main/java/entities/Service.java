@@ -2,6 +2,7 @@ package entities;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import enums.ServicePriority;
 import enums.ServiceStatus;
@@ -32,14 +33,13 @@ public abstract class Service implements Serializable {
 		
 	}
 
-	public Service(Integer id, String description, ServiceType type, LocalDateTime beginDate,
-			LocalDateTime endDate, ServiceStatus status,
+	public Service(String description, ServiceType type, String beginDate,
+			String endDate, ServiceStatus status,
 			ServicePriority priority) {
-		this.id = id;
 		this.description = description;
 		this.type = type;
-		this.beginDate = beginDate;
-		this.endDate = endDate;
+		this.beginDate = LocalDateTime.parse(beginDate, DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
+		this.endDate = LocalDateTime.parse(endDate, DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
 		this.status = status;
 		this.priority = priority;
 	}
@@ -49,10 +49,6 @@ public abstract class Service implements Serializable {
     @Column(name="id")
 	public int getId() {
 		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	@Column(name="descrip")
