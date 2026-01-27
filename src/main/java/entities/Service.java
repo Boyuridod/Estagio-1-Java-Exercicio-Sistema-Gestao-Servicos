@@ -22,6 +22,7 @@ import jakarta.persistence.Table;
 @Table(name = "services")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "service_type")
+@SuppressWarnings("serial")
 public abstract class Service implements Serializable {
 	private Integer id;
 	private String description;

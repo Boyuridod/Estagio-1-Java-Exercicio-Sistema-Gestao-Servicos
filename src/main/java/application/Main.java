@@ -20,7 +20,7 @@ public class Main {
 
 			System.out.println("1) New service");
 			System.out.println("2) List services");
-//			System.out.println("3) Update service");
+			System.out.println("3) Update service");
 			System.out.println("4) Delete service");
 			System.out.println("0) Close application");
 

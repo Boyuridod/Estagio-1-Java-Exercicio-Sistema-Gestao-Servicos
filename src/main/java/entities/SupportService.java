@@ -11,6 +11,7 @@ import jakarta.persistence.Entity;
 
 @Entity
 @DiscriminatorValue("SUPPORT")
+@SuppressWarnings("serial")
 public class SupportService extends Service {
 
 	private String whoNeeded;

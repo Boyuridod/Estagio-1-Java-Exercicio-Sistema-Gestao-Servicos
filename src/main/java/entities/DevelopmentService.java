@@ -11,6 +11,7 @@ import jakarta.persistence.Entity;
 
 @Entity
 @DiscriminatorValue("DEVELOPMENT")
+@SuppressWarnings("serial")
 public class DevelopmentService extends Service{
 	
 	private String language;

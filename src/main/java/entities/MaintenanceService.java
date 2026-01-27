@@ -11,6 +11,7 @@ import jakarta.persistence.Entity;
 
 @Entity
 @DiscriminatorValue("MAINTENANCE")
+@SuppressWarnings("serial")
 public class MaintenanceService extends Service {
 	
 	private String where;
