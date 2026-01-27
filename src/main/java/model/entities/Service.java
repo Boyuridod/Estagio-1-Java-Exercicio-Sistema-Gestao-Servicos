@@ -1,12 +1,8 @@
-package entities;
+package model.entities;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
-import enums.ServicePriority;
-import enums.ServiceStatus;
-import enums.ServiceType;
 import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorColumn;
 import jakarta.persistence.Entity;
@@ -17,6 +13,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.Table;
+import model.enums.ServicePriority;
+import model.enums.ServiceStatus;
+import model.enums.ServiceType;
 
 @Entity
 @Table(name = "services")

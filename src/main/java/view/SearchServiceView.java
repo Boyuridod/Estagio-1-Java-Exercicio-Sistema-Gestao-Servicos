@@ -1,9 +1,9 @@
-package application;
+package view;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import controller.ServiceDAO;
+import DAO.ServiceDAO;
 import entities.Service;
 
 public class SearchServiceView {

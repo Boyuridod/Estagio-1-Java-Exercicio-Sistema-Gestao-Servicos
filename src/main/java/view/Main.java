@@ -1,11 +1,8 @@
-package application;
+package view;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
-import controller.ServiceDAO;
-import entities.Service;
+import DAO.ServiceDAO;
 
 public class Main {
 

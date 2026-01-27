@@ -1,15 +1,15 @@
-package application;
+package view;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import controller.ServiceDAO;
-import entities.DevelopmentService;
-import entities.MaintenanceService;
-import entities.Service;
-import entities.SupportService;
-import enums.ServicePriority;
-import enums.ServiceStatus;
+import DAO.ServiceDAO;
+import model.entities.DevelopmentService;
+import model.entities.MaintenanceService;
+import model.entities.Service;
+import model.entities.SupportService;
+import model.enums.ServicePriority;
+import model.enums.ServiceStatus;
 
 public class NewServiceView {
 	

@@ -1,8 +1,8 @@
-package application;
+package view;
 
 import java.util.Scanner;
 
-import controller.ServiceDAO;
+import DAO.ServiceDAO;
 import entities.Service;
 
 public class UpdateServiceView {

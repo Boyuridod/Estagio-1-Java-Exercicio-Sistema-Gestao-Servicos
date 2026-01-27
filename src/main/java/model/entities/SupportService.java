@@ -1,13 +1,13 @@
-package entities;
+package model.entities;
 
 import java.time.LocalDateTime;
 
-import enums.ServicePriority;
-import enums.ServiceStatus;
-import enums.ServiceType;
 import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
+import model.enums.ServicePriority;
+import model.enums.ServiceStatus;
+import model.enums.ServiceType;
 
 @Entity
 @DiscriminatorValue("SUPPORT")

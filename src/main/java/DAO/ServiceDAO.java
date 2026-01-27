@@ -1,10 +1,10 @@
-package controller;
+package DAO;
 
 import java.util.ArrayList;
 
-import entities.Service;
 import jakarta.persistence.EntityManager;
-import persistence.JPAUtil;
+import model.entities.Service;
+import model.persistence.JPAUtil;
 
 public class ServiceDAO {
 	private static final EntityManager em = JPAUtil.getEntityManagerFactory().createEntityManager();

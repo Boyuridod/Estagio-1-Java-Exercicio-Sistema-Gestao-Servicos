@@ -1,6 +1,6 @@
-package application;
+package view;
 
-import controller.ServiceDAO;
+import DAO.ServiceDAO;
 
 public class DeleteServiceView {
 
