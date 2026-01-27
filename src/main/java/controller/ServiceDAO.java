@@ -165,6 +165,21 @@ public class ServiceDAO {
 		
 	}
 	
+	public static void updateService(int id, Service s) {
+		
+		try {
+			s.setId(1);
+			em.getTransaction().begin();
+			em.merge(s);
+			em.getTransaction().commit();			
+		}
+		catch(Exception e) {
+			em.getTransaction().rollback();
+			e.printStackTrace();
+		}
+		
+	}
+	
 	public static void saveService(Service s) {
 		
 		try {

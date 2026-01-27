@@ -85,6 +85,9 @@ public class Main {
 				scan.nextLine();
 				
 				break;
+			case 3:
+				UpdateView.menuUpdate();
+				break;
 			case 4:
 				int type = 0;
 				
