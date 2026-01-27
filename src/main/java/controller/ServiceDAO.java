@@ -137,8 +137,6 @@ public class ServiceDAO {
 			s = new SupportService(description, beginDate, endDate, status, priority, whoNeeded, howWasSolved);
 			break;
 		}
-		
-		scan.close();
 
 		return s;
 	}
