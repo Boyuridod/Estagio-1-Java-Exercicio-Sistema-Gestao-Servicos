@@ -112,5 +112,5 @@ public abstract class Service implements Serializable {
 	public void setPriority(ServicePriority priority) {
 		this.priority = priority;
 	}
-	public abstract double calculatePrice();
+	
 }

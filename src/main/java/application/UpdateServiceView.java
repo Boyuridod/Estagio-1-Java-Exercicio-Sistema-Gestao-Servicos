@@ -5,7 +5,7 @@ import java.util.Scanner;
 import controller.ServiceDAO;
 import entities.Service;
 
-public class UpdateView {
+public class UpdateServiceView {
 
 	public static void menuUpdate(){
 		Scanner scan = new Scanner(System.in);

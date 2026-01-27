@@ -45,19 +45,5 @@ public class SupportService extends Service {
 	public void setHowWasSolved(String howWasSolved) {
 		this.howWasSolved = howWasSolved;
 	}
-
-	@Override
-	public String toString() {
-		return "SupportService [getId()=" + getId() + ", getDescription()=" + getDescription() + ", getType()="
-				+ getType() + ", getBeginDate()=" + getBeginDate() + ", getEndDate()=" + getEndDate() + ", getStatus()="
-				+ getStatus() + ", getPriority()=" + getPriority() + ", whoNeeded=" + whoNeeded + ", howWasSolved="
-				+ howWasSolved + "]";
-	}
-
-	@Override
-	public double calculatePrice() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 	
 }

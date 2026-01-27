@@ -34,18 +34,5 @@ public class DevelopmentService extends Service{
 	public void setLanguage(String language) {
 		this.language = language;
 	}
-
-	@Override
-	public String toString() {
-		return "DevelopmentService [getId()=" + getId() + ", getDescription()=" + getDescription() + ", getType()="
-				+ getType() + ", getBeginDate()=" + getBeginDate() + ", getEndDate()=" + getEndDate() + ", getStatus()="
-				+ getStatus() + ", getPriority()=" + getPriority() + ", language=" + language + "]";
-	}
-
-	@Override
-	public double calculatePrice() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 	
 }

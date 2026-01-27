@@ -45,19 +45,5 @@ public class MaintenanceService extends Service {
 	public void setWhatHappened(String whatHappened) {
 		this.whatHappened = whatHappened;
 	}
-
-	@Override
-	public String toString() {
-		return "MaintenanceService [getId()=" + getId()
-				+ ", getDescription()=" + getDescription() + ", getType()=" + getType() + ", getBeginDate()="
-				+ getBeginDate() + ", getEndDate()=" + getEndDate() + ", getStatus()=" + getStatus()
-				+ ", getPriority()=" + getPriority() + "where=" + where + ", whatHappened=" + whatHappened + "]";
-	}
-
-	@Override
-	public double calculatePrice() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
+	
 }
