@@ -66,8 +66,8 @@ public abstract class Service implements Serializable {
 		this.description = description;
 	}
 
-	@Enumerated(EnumType.STRING)
-    @Column(name="type")
+//	@Enumerated(EnumType.STRING)
+//    @Column(name="type_of")
 	public ServiceType getType() {
 		return type;
 	}
